@@ -49,19 +49,16 @@ function XSAlert({
 }) {
    return new Promise(function(resolve, reject) {
       setTimeout(function(){ 
-
-         
          if(animation == null){ animation = 'scale-up-center'; }
          if(okButtonText == null){ okButtonText = 'OK'; }
          if(cancelButtonText == null){ cancelButtonText = 'Cancel'; }
-         
+         if(position == null){ position = 'center'; }
+
          /* Icons */
          if(icon == 'success'){ icon = 'https://xsgames.co/xsalert/icons/success.png'; };
          if(icon == 'warning'){ icon = 'https://xsgames.co/xsalert/icons/warning.png'; };
          if(icon == 'error'){ icon = 'https://xsgames.co/xsalert/icons/error.png'; };
          if(icon == 'question'){ icon = 'https://xsgames.co/xsalert/icons/question.png'; };
-         
-         if(position == null){ position = 'center'; }
          
          /* Show alert */
          $('body').append(
@@ -101,12 +98,8 @@ function XSAlert({
          if(autoCloseTimer == null) { $("#xs-progress-bar").remove(); $("#xs-progress-icon").remove(); 
          } else { 
             var elem = document.getElementById("xs-progress-bar");   
-            var width = 0;
-            var id = setInterval(frame, autoCloseTimer/100);
-            function frame() {
-               if (width >= 98) { clearInterval(id); resolve('autoClosed'); closeXSAlert();
-               } else { width++;  elem.style.width = width + '%'; }
-            }
+            var width = 0; var id = setInterval(frame, autoCloseTimer/100);
+            function frame() { if (width >= 98) { clearInterval(id); resolve('autoClosed'); closeXSAlert(); } else { width++;  elem.style.width = width + '%'; } }
          }
          if(footer == null) { $('#xs-footer').remove(); }
          if(icon == null) { $('#xs-icon').remove(); }
