@@ -1,4 +1,6 @@
-![favicon](https://user-images.githubusercontent.com/39766031/170672734-5298f45a-59a2-4a50-a17e-9da887f94ff9.png =150x)
+
+![favicon](https://user-images.githubusercontent.com/39766031/170673432-b0626d2f-4bf0-40d6-89b5-52af53ce2baf.png)
+
 # XSAlert
 
 ## An easy-to-use, responsive and customizable JavaScript Alert
