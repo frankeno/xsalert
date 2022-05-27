@@ -1,11 +1,13 @@
+<img width="684" alt="xsalert" src="https://user-images.githubusercontent.com/39766031/170674914-b3d1bc26-0b48-4ad7-94fc-21c1da76d2b9.png">
 
-![favicon](https://user-images.githubusercontent.com/39766031/170673432-b0626d2f-4bf0-40d6-89b5-52af53ce2baf.png)
 
 # XSAlert
 
 ## An easy-to-use, responsive and customizable JavaScript (jQuery) Alert
 
 Check out Documentation and exampels at https://xsgames.co/xsalert
+
+## Some examples:
 
 <img width="533" alt="xsalert1" src="https://user-images.githubusercontent.com/39766031/170674252-b8803938-1a17-46c3-9300-386c204a7558.png">
 <img width="521" alt="xsalert2" src="https://user-images.githubusercontent.com/39766031/170674617-298b0ac6-ed26-4dd2-8dcd-2c06728279fa.png">
