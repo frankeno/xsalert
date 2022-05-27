@@ -3,7 +3,7 @@
 
 # XSAlert
 
-## An easy-to-use, responsive and customizable JavaScript jQuery) Alert
+## An easy-to-use, responsive and customizable JavaScript (jQuery) Alert
 
 Check out Documentation and exampels at https://xsgames.co/xsalert
 
