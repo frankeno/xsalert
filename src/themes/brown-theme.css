@@ -1,5 +1,5 @@
 /*-------------------------------------
-  XSAlert - Light Theme
+  XSAlert - Brown Theme
   Made by Frank Eno - XSGames
   URL:  https://xsgames.co/xsalert
   Twitter:  @xsgames_
@@ -20,9 +20,11 @@
   --dark-orange: #ff5722;
   --gray: #b0bec5;
   --purple: #b39ddb;
+  --dark-purple: #5e3682;
   --light-purple: #f06292;
   --brown: #8d6e63;
   --water: #4DB6A8;
+  --red: #dc3545;
 }
 
 /*--------------------
@@ -39,27 +41,27 @@ hr { background: #777; }
 /*--------------------
   Positions
 ---------------------*/
-.xsalert-center { max-width: 32%; height: fit-content; position: fixed;  top: 0; left: 0; right: 0; bottom: 0; display: flex; justify-content: center; padding: 1rem; background: var(--white); transition: all 0.4s ease-in; margin: auto; color: var(--black); border-radius: 12px; align-content: space-around;flex-wrap: wrap;align-items: stretch;  }
-.xsalert-top-left { max-width: 32%; height: fit-content; position: fixed;  top: 0; left: 0; display: flex; justify-content: center; padding: 1rem; background: var(--white); transition: all 0.4s ease-in; margin: auto; color: var(--black); border-radius: 12px; align-content: space-around;flex-wrap: wrap;align-items: stretch; margin-top: 20px;margin-left: 20px;}
-.xsalert-top-right { max-width: 32%; height: fit-content; position: fixed;  top: 0; right: 0; display: flex; justify-content: center; padding: 1rem; background: var(--white); transition: all 0.4s ease-in; margin: auto; color: var(--black); border-radius: 12px; align-content: space-around;flex-wrap: wrap;align-items: stretch; margin-top: 20px;margin-right: 20px;}
-.xsalert-bottom-left { max-width: 32%; height: fit-content; position: fixed;  bottom: 0; left: 0; display: flex; justify-content: center; padding: 1rem; background: var(--white); transition: all 0.4s ease-in; margin: auto; color: var(--black); border-radius: 12px; align-content: space-around;flex-wrap: wrap;align-items: stretch; margin-bottom: 20px;margin-left: 20px;}
-.xsalert-bottom-right { max-width: 32%; height: fit-content; position: fixed;  bottom: 0; right: 0; display: flex; justify-content: center; padding: 1rem; background: var(--white); transition: all 0.4s ease-in; margin: auto; color: var(--black); border-radius: 12px; align-content: space-around;flex-wrap: wrap;align-items: stretch; margin-bottom: 20px;right: 20px;}
+.xsalert-center {max-width: 32%;height: fit-content;position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: flex;justify-content: center;padding: 1rem;background: var(--brown);transition: all 0.4s ease-in;margin: auto;color: var(--white);border-radius: 12px;align-content: space-around;flex-wrap: wrap;align-items: stretch;}
+.xsalert-top-left { max-width: 32%; height: fit-content; position: fixed;  top: 0; left: 0; display: flex; justify-content: center; padding: 1rem; background: var(--brown); transition: all 0.4s ease-in; margin: auto; color: var(--white); border-radius: 12px; align-content: space-around;flex-wrap: wrap;align-items: stretch; margin-top: 20px;margin-left: 20px;}
+.xsalert-top-right { max-width: 32%; height: fit-content; position: fixed;  top: 0; right: 0; display: flex; justify-content: center; padding: 1rem; background: var(--brown); transition: all 0.4s ease-in; margin: auto; color: var(--white); border-radius: 12px; align-content: space-around;flex-wrap: wrap;align-items: stretch; margin-top: 20px;margin-right: 20px;}
+.xsalert-bottom-left { max-width: 32%; height: fit-content; position: fixed;  bottom: 0; left: 0; display: flex; justify-content: center; padding: 1rem; background: var(--brown); transition: all 0.4s ease-in; margin: auto; color: var(--white); border-radius: 12px; align-content: space-around;flex-wrap: wrap;align-items: stretch; margin-bottom: 20px;margin-left: 20px;}
+.xsalert-bottom-right { max-width: 32%; height: fit-content; position: fixed;  bottom: 0; right: 0; display: flex; justify-content: center; padding: 1rem; background: var(--brown); transition: all 0.4s ease-in; margin: auto; color: var(--white); border-radius: 12px; align-content: space-around;flex-wrap: wrap;align-items: stretch; margin-bottom: 20px;right: 20px;}
 
 
 /*--------------------
   Title and Message
 ---------------------*/
 .xs-title { width: 100%; font-weight: 600; padding: 10px;  text-align: center; font-size: 32px;}
-.xs-message { width: 100%; font-weight: 400; padding: 10px; margin: auto; text-align: center; }
-.xs-footer { width: 100%; font-weight: 400; padding: 10px; margin: auto; text-align: center;  margin-top: 12px; }
-.xs-footer a { text-decoration: none; }
+.xs-message {width: 100%;font-weight: 400;padding: 10px;margin: auto;text-align: center;color: #f1f1f1;}
+.xs-footer {width: 100%;font-weight: 400;padding: 10px;margin: auto;text-align: center;margin-top: 12px;}
+.xs-footer a { color: #ffffff; }
 .xs-footer a:hover { text-decoration: underline; }
 
 /*--------------------
   Buttons
 ---------------------*/
-.xs-ok-btn { cursor: pointer; background: var(--black); border: none; outline: none; font-size: inherit; font-family: inherit; color: var(--white); padding: 10px 10px;border-radius: 8px;min-width: 100px; transition: .3s ease;margin-top: 20px;margin-right: 5px;}
-.xs-ok-btn:hover { background: #f1f1f1; color: #121212; }
+.xs-ok-btn {cursor: pointer;background: #1a1233;border: none;outline: none;font-size: inherit;font-family: inherit;color: var(--white);padding: 10px 10px;border-radius: 8px;min-width: 100px;transition: .3s ease;margin-top: 20px;margin-right: 5px;}
+.xs-ok-btn:hover { background: #ffffff; color: var(--light-purple); }
 .xs-ok-btn:focus { border: 3px solid #aacef3; }
 .xs-cancel-btn { cursor: pointer; background: var(--lightgray); border: none; outline: none; font-size: inherit; font-family: inherit; color: var(--black); padding: 10px 10px; border-radius: 8px; min-width: 100px; margin-top: 20px;}
 .xs-cancel-btn:hover { background: #121212; color: #f1f1f1; }
@@ -76,14 +78,14 @@ hr { background: #777; }
 /*--------------------
   Inputs
 ---------------------*/
-.xs-input { width: 92%; border: 1px solid #121212; border-radius: 6px; padding: 6px 10px; font-size: 14px;}
+.xs-input {width: 92%;border: 1px solid #121212;border-radius: 6px;padding: 6px 10px;font-size: 14px;background: #33184e;color: #fff;}
 .xs-textarea { width: 92%; border: 1px solid #121212; border-radius: 6px; padding: 6px 10px; font-size: 14px;height: 80px; white-space: pre-wrap; }
 .xs-select {  color: #121212; width: 90%;height: 38px;border-radius: 6px;}
 
 /*--------------------
   Progress Bar
 ---------------------*/
-.xs-progress-bar { background: #607d8b; height: 7px; width: 98%; border-radius: 99px;bottom: 4px;position: fixed;}
+.xs-progress-bar { background: #f9fafb; height: 7px; width: 98%; border-radius: 99px;bottom: 4px;position: fixed;}
 .xs-progress-icon { width: 40px; margin-bottom: 10px;}
 
 /*--------------------
