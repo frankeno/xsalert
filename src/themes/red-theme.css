@@ -1,0 +1,155 @@
+/*-------------------------------------
+  XSAlert - Red Theme
+  Made by Frank Eno - XSGames
+  URL:  https://xsgames.co/xsalert
+  Twitter:  @xsgames_
+--------------------------------------*/
+
+/*--------------------
+  Colors
+---------------------*/
+:root {
+  --lightgray: #efefef;
+  --blue: steelblue;
+  --white: #ffffff;
+  --black: #121212;
+  --default: #ffeb3b;
+  --green: #9ccc65;
+  --orange: #ffc107;
+  --blue: #00bcd4;
+  --dark-orange: #ff5722;
+  --gray: #b0bec5;
+  --purple: #b39ddb;
+  --light-purple: #f06292;
+  --brown: #8d6e63;
+  --water: #4DB6A8;
+  --red: #dc3545;
+}
+
+/*--------------------
+  General
+---------------------*/
+hr { background: #777; }
+
+/*--------------------
+  Overlay/Container
+---------------------*/
+.xsoverlay { width: 100%; height: 100%; position: fixed; background: rgba(0, 0, 0, 0.8); top: 0;bottom: 0;left: 0;right: 0; }
+.xs-btn-container {  width: 100%;text-align: center;}
+
+/*--------------------
+  Positions
+---------------------*/
+.xsalert-center {max-width: 32%;height: fit-content;position: fixed;top: 0;left: 0;right: 0;bottom: 0;display: flex;justify-content: center;padding: 1rem;background: var(--red);transition: all 0.4s ease-in;margin: auto;color: var(--white);border-radius: 12px;align-content: space-around;flex-wrap: wrap;align-items: stretch;}
+.xsalert-top-left { max-width: 32%; height: fit-content; position: fixed;  top: 0; left: 0; display: flex; justify-content: center; padding: 1rem; background: var(--red); transition: all 0.4s ease-in; margin: auto; color: var(--white); border-radius: 12px; align-content: space-around;flex-wrap: wrap;align-items: stretch; margin-top: 20px;margin-left: 20px;}
+.xsalert-top-right { max-width: 32%; height: fit-content; position: fixed;  top: 0; right: 0; display: flex; justify-content: center; padding: 1rem; background: var(--red); transition: all 0.4s ease-in; margin: auto; color: var(--white); border-radius: 12px; align-content: space-around;flex-wrap: wrap;align-items: stretch; margin-top: 20px;margin-right: 20px;}
+.xsalert-bottom-left { max-width: 32%; height: fit-content; position: fixed;  bottom: 0; left: 0; display: flex; justify-content: center; padding: 1rem; background: var(--red); transition: all 0.4s ease-in; margin: auto; color: var(--white); border-radius: 12px; align-content: space-around;flex-wrap: wrap;align-items: stretch; margin-bottom: 20px;margin-left: 20px;}
+.xsalert-bottom-right { max-width: 32%; height: fit-content; position: fixed;  bottom: 0; right: 0; display: flex; justify-content: center; padding: 1rem; background: var(--red); transition: all 0.4s ease-in; margin: auto; color: var(--white); border-radius: 12px; align-content: space-around;flex-wrap: wrap;align-items: stretch; margin-bottom: 20px;right: 20px;}
+
+
+/*--------------------
+  Title and Message
+---------------------*/
+.xs-title { width: 100%; font-weight: 600; padding: 10px;  text-align: center; font-size: 32px;}
+.xs-message {width: 100%;font-weight: 400;padding: 10px;margin: auto;text-align: center;color: #f1f1f1;}
+.xs-footer {width: 100%;font-weight: 400;padding: 10px;margin: auto;text-align: center;margin-top: 12px;}
+.xs-footer a { color: #ffffff; }
+.xs-footer a:hover { text-decoration: underline; }
+
+/*--------------------
+  Buttons
+---------------------*/
+.xs-ok-btn {cursor: pointer;background: #121212;border: none;outline: none;font-size: inherit;font-family: inherit;color: var(--white);padding: 10px 10px;border-radius: 8px;min-width: 100px;transition: .3s ease;margin-top: 20px;margin-right: 5px;}
+.xs-ok-btn:hover { background: #ffffff; color: var(--light-purple); }
+.xs-ok-btn:focus { border: 3px solid #aacef3; }
+.xs-cancel-btn { cursor: pointer; background: var(--lightgray); border: none; outline: none; font-size: inherit; font-family: inherit; color: var(--black); padding: 10px 10px; border-radius: 8px; min-width: 100px; margin-top: 20px;}
+.xs-cancel-btn:hover { background: #121212; color: #f1f1f1; }
+.xs-third-btn { cursor: pointer; background: var(--orange); border: none; outline: none; font-size: inherit; font-family: inherit; color: #121221; padding: 10px 10px; border-radius: 8px; min-width: 100px; margin-top: 20px; margin-right: 8px;}
+.xs-third-btn:hover { background: #121212; color: #f1f1f1; }
+
+/*--------------------
+  Icons & Image
+---------------------*/
+.xs-icon { width: 100%;    text-align: center;}
+.xs-icon img { width: 80px; }
+.xs-image img { width: 100%;object-fit: cover; margin-top: 10px; border-radius: 10px;}
+
+/*--------------------
+  Inputs
+---------------------*/
+.xs-input {width: 92%;border: 1px solid #121212;border-radius: 6px;padding: 6px 10px;font-size: 14px;background: #f9f0a3;}
+.xs-textarea { width: 92%; border: 1px solid #121212; border-radius: 6px; padding: 6px 10px; font-size: 14px;height: 80px; white-space: pre-wrap; }
+.xs-select {  color: #121212; width: 90%;height: 38px;border-radius: 6px;}
+
+/*--------------------
+  Progress Bar
+---------------------*/
+.xs-progress-bar { background: #f9fafb; height: 7px; width: 98%; border-radius: 99px;bottom: 4px;position: fixed;}
+.xs-progress-icon { width: 40px; margin-bottom: 10px;}
+
+/*--------------------
+  Animations
+---------------------*/
+.scale-up-center{animation:scale-up-center 0.4s ease both; } @keyframes scale-up-center{ 0%{transform:scale(0)} 100%{transform:scale(1)} }
+.scale-up-top{animation:scale-up-top 0.4s ease both; } @keyframes scale-up-top{0%{transform:scale(0);transform-origin:center top}100%{transform:scale(1);transform-origin:center top}}
+.scale-up-bottom{animation:scale-up-bottom 0.4s ease both; } @keyframes scale-up-bottom{0%{transform:scale(0);transform-origin:center bottom}100%{transform:scale(1);transform-origin:center bottom}}
+.slide-top{animation:slide-top 0.4s ease both; } @keyframes slide-top{0%{transform:translateY(-2000px)}100%{transform:translateY(0px)}}
+.slide-bottom{animation:slide-bottom 0.4s ease both}@keyframes slide-bottom{0%{transform:translateY(2000px)}100%{transform:translateY(0px)}}
+.jello-horizontal{animation:jello-horizontal .6s linear both} @keyframes jello-horizontal{0%{transform:scale3d(1,1,1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}100%{transform:scale3d(1,1,1)}}
+.jello-vertical{animation:jello-vertical .6s ease both; } @keyframes jello-vertical{0%{transform:scale3d(1,1,1)}30%{transform:scale3d(.75,1.25,1)}40%{transform:scale3d(1.25,.75,1)}50%{transform:scale3d(.85,1.15,1)}65%{transform:scale3d(1.05,.95,1)}75%{transform:scale3d(.95,1.05,1)}100%{transform:scale3d(1,1,1)}}
+.jello-diagonal{animation:jello-diagonal .6s ease both; } @keyframes jello-diagonal{0%{transform:skew(0deg 0deg)}30%{transform:skew(25deg 25deg)}40%{transform:skew(-15deg,-15deg)}50%{transform:skew(15deg,15deg)}65%{transform:skew(-5deg,-5deg)}75%{transform:skew(5deg,5deg)}100%{transform:skew(0deg 0deg)}}
+.rotate-top{animation:rotate-top 0.4s linear} @keyframes rotate-top{0%{transform:rotate(0);transform-origin:top}100%{transform:rotate(360deg);transform-origin:top}}
+.rotate-scale-up{animation:rotate-scale-up 0.4s linear both} @keyframes rotate-scale-up{0%{transform:scale(1) rotateZ(0)}50%{transform:scale(2) rotateZ(180deg)}100%{transform:scale(1) rotateZ(360deg)}}
+.rotate-scale-down{animation:rotate-scale-down 0.4s linear both} @keyframes rotate-scale-down{0%{transform:scale(1) rotateZ(0)}50%{transform:scale(.5) rotateZ(180deg)}100%{transform:scale(1) rotateZ(360deg)}}
+.rotate-scale-up-horizontal{animation:rotate-scale-up-horizontal 0.4s linear both} @keyframes rotate-scale-up-horizontal{0%{transform:scale(1) rotateX(0)}50%{transform:scale(2) rotateX(-180deg)}100%{transform:scale(1) rotateX(-360deg)}}
+.rotate-scale-up-vertical{animation:rotate-scale-up-vertical 0.4s linear both} @keyframes rotate-scale-up-vertical{0%{transform:scale(1) rotateY(0)}50%{transform:scale(2) rotateY(180deg)}100%{transform:scale(1) rotateY(360deg)}}
+.blur-in{animation:blur-in 0.4s linear both} @keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+.shake-horizontal{animation:shake-horizontal 0.8s linear both} @keyframes shake-horizontal{0%,100%{transform:translateX(0)}10%,30%,50%,70%{transform:translateX(-10px)}20%,40%,60%{transform:translateX(10px)}80%{transform:translateX(8px)}90%{transform:translateX(-8px)}}
+.shake-left-right{animation:shake-left-right 0.8s linear both} @keyframes shake-left-right{0%,100%{transform:rotate(0deg);transform-origin:50% 50%}10%{transform:rotate(8deg)}20%,40%,60%{transform:rotate(-10deg)}30%,50%,70%{transform:rotate(10deg)}80%{transform:rotate(-8deg)}90%{transform:rotate(8deg)}}
+.bounce-top{animation:bounce-top .9s linear both} @keyframes bounce-top{0%{transform:translateY(-45px);animation-timing-function:ease-in;opacity:1}24%{opacity:1}40%{transform:translateY(-24px);animation-timing-function:ease-in}65%{transform:translateY(-12px);animation-timing-function:ease-in}82%{transform:translateY(-6px);animation-timing-function:ease-in}93%{transform:translateY(-4px);animation-timing-function:ease-in}25%,55%,75%,87%{transform:translateY(0);animation-timing-function:ease-out}100%{transform:translateY(0);animation-timing-function:ease-out;opacity:1}}
+
+/* Closing animation */
+.closing-anim{animation:closing-anim 0.2s ease both } @keyframes closing-anim{0%{transform:scale(1)}100%{transform:scale(0)}}
+
+
+/*--------------------
+  Media Queries
+---------------------*/
+
+/* Tablet */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .xsalert-center { max-width: 70%;}
+  .xsalert-top-right { max-width: 60%;}
+  .xsalert-top-left { max-width: 60%;}
+  .xsalert-bottom-right { max-width: 60%;}
+  .xsalert-bottom-left { max-width: 60%;}
+}
+
+/* Tablet small screen*/
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .xsalert-center { max-width: 70%;}
+  .xsalert-top-right { max-width: 60%;}
+  .xsalert-top-left { max-width: 60%;}
+  .xsalert-bottom-right { max-width: 60%;}
+  .xsalert-bottom-left { max-width: 60%;}
+}
+
+/* Tablet Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .xsalert-center { max-width: 40%;}
+}
+
+/* iPhone */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .xsalert-center { max-width: 90%;}
+  .xsalert-top-right { max-width: 70%;}
+  .xsalert-top-right { max-width: 70%;}
+  .xsalert-top-left { max-width: 70%;}
+  .xsalert-bottom-right { max-width: 70%;}
+  .xsalert-bottom-left { max-width: 70%;}
+}
+
+/* iPhone Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) { 
+  .xsalert-center { max-width: 40%;}
+}
